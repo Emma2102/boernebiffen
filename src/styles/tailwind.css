@@ -1,12 +1,39 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @plugin '@tailwindcss/typography';
 @plugin '@tailwindcss/forms';
 @import "tailwindcss-animated";
 @import "tailwindcss-intersect";
 
+.grandstander {
+  font-family: "Grandstander", cursive;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
 @theme {
   /* Her tilføjes theme variable // tokens */
+
+  /*farver*/
+  --color-tekst-900: #272432;
+  --color-bg-100: #efe5fa;
+  --color-prim-100: #5e2779;
+  --color-pink-100: #ffadc0;
+  --color-gul-50: #ffecc2;
+  --color-turkis-50: #c4f5e4;
+
+  /*Fonte*/
+  --font-grandstander: "Grandstander", cursive;
+  --font-roboto: "Roboto", sans-serif;
 }
 
 @layer base {
@@ -19,9 +46,7 @@
   }
 }
 
-@layer components{
-
+@layer components {
 }
-@layer utilities{
-  
+@layer utilities {
 }
