@@ -1,0 +1,35 @@
+---
+const { image, title, description, time, color } = Astro.props;
+---
+<section>
+  <div 
+    class="grid grid-cols-2 rounded-3xl shadow-md w-[450px] lg:w-[600px] h-[250px] lg:h-[300px] overflow-hidden hover:scale-[1.02] duration-300 ease-in cursor-pointer"
+    style={`background-color: ${color};`}
+  >
+    
+    <!-- Venstre: billede -->
+    <div class="relative w-full h-full">
+      <img 
+        src={image}
+        class="w-full h-full object-cover object-center"
+      />
+    </div>
+
+    <!-- Højre: tekst -->
+    <div class="flex flex-col justify-start p-6 space-y-4 text-black">
+  <h2 class="font-grandstander text-lg lg:text-3xl font-bold leading-tight">
+    {title}
+  </h2>
+
+  <p class="font-raleway text-[12px] lg:text-[18px] leading-snug">
+    {description}
+  </p>
+
+  <div class="flex items-center space-x-2 text-[12px] lg:text-[18px] font-raleway mt-2">
+    <span> <img src="/public/ur.png" alt="Ur icon" class="w-4 h-4 lg:w-6 lg:h-6" /></span>
+    <span>{time}</span>
+  </div>
+</div>
+
+  </div>
+</section>
