@@ -5,10 +5,13 @@ import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
 import Card3 from '../components/Card3.astro';
+import Card4 from '../components/Card4.astro';
+import Card2 from '../components/Card2.astro';
+import Card1 from '../components/Card1.astro';
 ---
 
 <MainLayout title="Titel">
-	<article class="pl-10">
+	<article class="lg:pl-10">
 
 		<section class="w-full flex justify-center py-10 px-4">
   <div class="relative w-full max-w-6xl h-[500px] md:h-[600px] rounded-[35px] overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer">
@@ -46,10 +49,107 @@ import Card3 from '../components/Card3.astro';
   </div>
 </section>
 
+<section>
+	<h1 class="font-grandstander font-bold text-3xl">FIGURER</h1>
+</section>
+
+<section class="mb-10 overflow-x-auto scrollbar-hide py-4">
+  <div class="flex space-x-6 px-4 w-max">
+    <Card1 src="/gurli.png" alt="test" size="w-50 h-50" />
+    <Card1 src="/finger.png" alt="test" size="w-50 h-50" />
+    <Card1 src="/vitello.png" alt="test" size="w-50 h-50" />
+ <Card1 src="/rita.png" alt="test" size="w-50 h-50" />
+  <Card1 src="/cirkeline-3.png" alt="test" size="w-50 h-50" />
+  <Card1 src="/gurli.png" alt="test" size="w-50 h-50" />
+    <Card1 src="/finger.png" alt="test" size="w-50 h-50" />
+    <Card1 src="/vitello.png" alt="test" size="w-50 h-50" />
+ <Card1 src="/rita.png" alt="test" size="w-50 h-50" />
+  <Card1 src="/cirkeline-3.png" alt="test" size="w-50 h-50" />
+    <Card1 src="/gurli.png" alt="test" size="w-50 h-50" />
+    <Card1 src="/finger.png" alt="test" size="w-50 h-50" />
+    <Card1 src="/vitello.png" alt="test" size="w-50 h-50" />
+ <Card1 src="/rita.png" alt="test" size="w-50 h-50" />
+  <Card1 src="/cirkeline-3.png" alt="test" size="w-50 h-50" />
+  </div>
+</section>
+
+<section>
+	<h1 class="font-grandstander font-bold text-3xl">SE VIDERE HVOR DU SLAP..</h1>
+</section>
+
+<section class="mb-10 overflow-x-auto scrollbar-hide py-4">
+	<div class="flex space-x-6 px-4 w-max">
+	<Card2 
+	src="/honningkage-video.png"
+	clock="/Component 57.png"
+	alt="Ur icon"
+	h3="Honningkagen løber hjemmefra"
+  />
+
+  	<Card2 
+	src="/video-preview.png"
+	clock="/Component 57.png"
+	alt="Ur icon"
+	h3="Den kæmpestore gulerod"
+  />
+
+  	<Card2 
+	src="/lily.png"
+	clock="/Component 57.png"
+	alt="Ur icon"
+	h3="Lili elsker mad"
+  />
+
+  	<Card2 
+	src="/honningkage-video.png"
+	clock="/Component 57.png"
+	alt="Ur icon"
+	h3="Honningkagen løber hjemmefra"
+  />
+
+  	<Card2 
+	src="/video-preview.png"
+	clock="/Component 57.png"
+	alt="Ur icon"
+	h3="Den kæmpestore gulerod"
+  />
+
+  	<Card2 
+	src="/lily.png"
+	clock="/Component 57.png"
+	alt="Ur icon"
+	h3="Lili elsker mad"
+  />
+
+  	<Card2 
+	src="/honningkage-video.png"
+	clock="/Component 57.png"
+	alt="Ur icon"
+	h3="Honningkagen løber hjemmefra"
+  />
+
+  	<Card2 
+	src="/video-preview.png"
+	clock="/Component 57.png"
+	alt="Ur icon"
+	h3="Den kæmpestore gulerod"
+  />
+
+  	<Card2 
+	src="/lily.png"
+	clock="/Component 57.png"
+	alt="Ur icon"
+	h3="Lili elsker mad"
+  />
+	</div>
+</section>
 
 
+<section>
+	<h1 class="font-grandstander font-bold text-3xl">EFTERÅR</h1>
+</section>
 
-<article class="overflow-x-auto scrollbar-hide py-4">
+<article class="mb-10 overflow-x-auto scrollbar-hide py-4">
  <div class="flex space-x-6 px-4">
 <Card3 
   image="/kanin.png"
@@ -99,6 +199,86 @@ import Card3 from '../components/Card3.astro';
   color="var(--color-pink-100)"
 />
 </div>
+	</article>
+
+	<section>
+	<h1 class="font-grandstander font-bold text-3xl">OM MAD</h1>
+</section>
+
+<article class="overflow-x-auto scrollbar-hide py-4">
+  <div class="flex space-x-6 px-4 w-max">
+		<Card4
+	src="/lily.png"
+	clock="/clock.png"
+	alt="clock icon"
+	h3="Lili elsker mad"
+	p="4 min"
+	/>
+
+		<Card4
+	src="/video-preview.png"
+	clock="/clock.png"
+	alt="clock icon"
+	h3="Den kæmpestore gulerod"
+	p="7 min"
+	/>
+
+		<Card4
+	src="/honningkage-video.png"
+	clock="/clock.png"
+	alt="clock icon"
+	h3="Honningkagen løber hjemmefra"
+	p="6 min"
+	/>
+
+			<Card4
+	src="/lily.png"
+	clock="/clock.png"
+	alt="clock icon"
+	h3="Lili elsker mad"
+	p="4 min"
+	/>
+
+		<Card4
+	src="/video-preview.png"
+	clock="/clock.png"
+	alt="clock icon"
+	h3="Den kæmpestore gulerod"
+	p="7 min"
+	/>
+
+		<Card4
+	src="/honningkage-video.png"
+	clock="/clock.png"
+	alt="clock icon"
+	h3="Honningkagen løber hjemmefra"
+	p="6 min"
+	/>
+
+			<Card4
+	src="/lily.png"
+	clock="/clock.png"
+	alt="clock icon"
+	h3="Lili elsker mad"
+	p="4 min"
+	/>
+
+		<Card4
+	src="/video-preview.png"
+	clock="/clock.png"
+	alt="clock icon"
+	h3="Den kæmpestore gulerod"
+	p="7 min"
+	/>
+
+		<Card4
+	src="/honningkage-video.png"
+	clock="/clock.png"
+	alt="clock icon"
+	h3="Honningkagen løber hjemmefra"
+	p="6 min"
+	/>
+	</div>
 	</article>
 
     <article>
