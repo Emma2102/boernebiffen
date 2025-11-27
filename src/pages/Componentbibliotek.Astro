@@ -1,0 +1,50 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Card3 from "../components/Card3.astro";
+import Card4 from "../components/Card4.astro";
+import Card1 from "../components/Card1.astro";
+---
+
+<MainLayout title="Komponent bibliotek">
+  <article>
+    <h1>Komponent bibliotek</h1>
+    <h2>Komponent bibliotek til projekt [navn på projektet]</h2>
+    <h3>Introduktion</h3>
+    <p>
+      Komponent biblioteket samler de komponenter, der anvendes på sitet (på nær
+      header/navbar og footer).
+    </p>
+
+    <article>
+      <section>
+        <h2>Typografi</h2>
+        <div>
+          <h1 class="font-grandstander font-bold text-5xl">Overskrift 1</h1>
+          <h2 class="font-grandstander font-bold text-4xl">Overskrift 2</h2>
+          <h3 class="font-grandstander font-bold text-xl">Overskrift 3</h3>
+          <p class="font-roboto">Brødtekst</p>
+        </div>
+      </section>
+      <section>
+        <h2>Cards</h2>
+        <div>
+          <div>
+            <h3>Rundede cards</h3>
+            <Card1 src="../cirkeline-4.png" />
+          </div>
+          <Card3 />
+          <div>
+            <h3>Carousel cards med ur og varighed</h3>
+            <Card4
+              src="../cirkeline-4.png"
+              clock="../clock.png"
+              alt="Image 4"
+              h3="Overskrift til video"
+              p="Videoens varighed"
+            />
+          </div>
+        </div>
+      </section>
+    </article>
+  </article>
+</MainLayout>
