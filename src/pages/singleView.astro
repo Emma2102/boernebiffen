@@ -1,0 +1,106 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from "../components/Button.astro";
+import Card4 from "../components/Card4.astro";
+---
+
+<MainLayout title="Titel" />
+<article class="bg-[#EFE5FA]">
+  <section class="hero p-20 h-160 mb-80">
+    <img src="/cirkeline-hero.png" class="rounded-4xl" alt="" />
+    <div class="flex gap-5 my-4">
+      <h2 class="text-2xl font-bold my-4">Cirkeline: På med vanten</h2>
+      <div class="flex items-center gap-2">
+        <img src="../clock.png" alt="" />
+        <p>10 min</p>
+      </div>
+    </div>
+    <p class="my-4">
+      Cirkeline er en lille rund pige, der bor i en tændstikæske på tegnerens
+      bord. Cirkeline og musene Ingolf og Fredrik er ude at lege i sneen. De
+      bygger en snemus, som de kan skræmme katten med.
+    </p>
+    <p>Instruktør: <b>Jannik Hastrup</b> (Danmark, 1968)</p>
+  </section>
+
+  <section class="carousel ml-2 md:ml-15">
+    <h2 class="text-2xl font-bold">SERIEN: Cirkeline</h2>
+    <div
+      class="overflow-x-auto scrollbar-hide snap-x snap-mandatory py-4"
+      aria-label="Cirkeline carousel"
+    >
+      <div class="flex px-1 gap-2 md:gap-5">
+        <div class="snap-start flex-shrink-0 w-1/2 md:w-1/3">
+          <Card4
+            src="../cirkeline-1.png"
+            clock="../clock.png"
+            alt="Image 1"
+            h3="Cirkeline: På med vanten"
+            p="10 min"
+          />
+        </div>
+        <div class="snap-start flex-shrink-0 w-1/2 md:w-1/3">
+          <Card4
+            src="../cirkeline-2.png"
+            clock="../clock.png"
+            alt="Image 2"
+            h3="Cirkeline: 2+2=5"
+            p="12 min"
+          />
+        </div>
+        <div class="snap-start flex-shrink-0 w-1/2 md:w-1/3">
+          <Card4
+            src="../cirkeline-3.png"
+            clock="../clock.png"
+            alt="Image 3"
+            h3="Cirkeline: Sofus på flyvetur"
+            p="12 min"
+          />
+        </div>
+        <div class="snap-start flex-shrink-0 w-1/2 md:w-1/3">
+          <Card4
+            src="../cirkeline-4.png"
+            clock="../clock.png"
+            alt="Image 4"
+            h3="Cirkeline: Den fremmede"
+            p="13 min"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="carousel ml-20 my-10">
+    <h2 class="text-2xl font-bold my-4">MERE SOM DETTE!</h2>
+    <div class="flex gap-5 overflow-x-auto">
+      <Card4
+        src="../honningkage-video.png"
+        clock="../clock.png"
+        alt="Image 1"
+        h3="Honningkagen løber hjemmefra"
+        p="7 min"
+      />
+      <Card4
+        src="../video-preview.png"
+        clock="../clock.png"
+        alt="Image 2"
+        h3="Den kæmpestore gulerod"
+        p="6 min"
+      />
+      <Card4
+        src="../haren-skildpadde.png"
+        clock="../clock.png"
+        alt="Image 3"
+        h3="Harren og skildpadden"
+        p="2 min"
+      />
+      <Card4
+        src="../vilde-ville.png"
+        clock="../clock.png"
+        alt="Image 3"
+        h3="Ville og Vilde Kanin"
+        p="5 min"
+      />
+    </div>
+  </section>
+</article>

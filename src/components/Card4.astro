@@ -1,9 +1,13 @@
 ---
-const { src, clock, alt, h3, p, size = "w-80 h-100" } = Astro.props;
+const { src, clock, alt, h3, p } = Astro.props;
 ---
 
-<div class={`${size} ${size} rounded-xl overflow-hidden`}>
-  <img src={src} alt={alt} class="w-full h-full object-cover" />
+<div class={`rounded-xl`}>
+  <img
+    src={src}
+    alt={alt}
+    class="w-80 h-40 md:w-100 md:h-60 hover:scale-105 transition-transform duration-300 cursor-pointer"
+  />
   <h3 class="pt-2 pb-1 font-bold text-xl">{h3}</h3>
   <div class="flex gap-2 items-center">
     <img src={clock} alt={alt} class="w-5 h-5" />
