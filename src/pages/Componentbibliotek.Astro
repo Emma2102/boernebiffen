@@ -3,21 +3,16 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Card3 from "../components/Card3.astro";
 import Card4 from "../components/Card4.astro";
 import Card1 from "../components/Card1.astro";
+import Card2 from "../components/Card2.astro";
 ---
 
 <MainLayout title="Komponent bibliotek">
-  <article>
-    <h1>Komponent bibliotek</h1>
-    <h2>Komponent bibliotek til projekt [navn på projektet]</h2>
-    <h3>Introduktion</h3>
-    <p>
-      Komponent biblioteket samler de komponenter, der anvendes på sitet (på nær
-      header/navbar og footer).
-    </p>
+  <article class="p-20">
+    <h1 class="font-bold text-7xl py-10">Komponent bibliotek</h1>
 
     <article>
       <section>
-        <h2>Typografi</h2>
+        <h2 class="font-bold text-5xl py-10 text-fuchsia-950">Typografi</h2>
         <div>
           <h1 class="font-grandstander font-bold text-5xl">Overskrift 1</h1>
           <h2 class="font-grandstander font-bold text-4xl">Overskrift 2</h2>
@@ -25,25 +20,32 @@ import Card1 from "../components/Card1.astro";
           <p class="font-roboto">Brødtekst</p>
         </div>
       </section>
+      <p>
+        ____________________________________________________________________
+      </p>
       <section>
-        <h2>Cards</h2>
+        <h2 class="font-bold text-5xl pt-10 text-fuchsia-950">Cards</h2>
         <div>
-          <div>
-            <h3>Rundede cards</h3>
+          <div class="pb-10">
+            <h3 class="font-bold text-2xl my-5">Rundede cards</h3>
             <Card1 src="../cirkeline-4.png" />
           </div>
           <div>
-            <h3>Card med billede og beskrivelse</h3>
+            <h3 class="font-bold text-2xl my-5">
+              Card med billede og beskrivelse
+            </h3>
             <Card3
               image="/kanin.png"
-              title="DEN SIDSTE EFTERÅRSDAG"
+              title="OVERSKRIFT TIL VIDEO"
               description="En kort, ordløs fortælling om at hjælpes ad og konkurrere mod hinanden. Det er den sidste efterårsdag, og inden vinteren for alvor..."
-              time="7 min"
+              time="Videoens varighed"
               color="var(--color-gul-50)"
             />
           </div>
           <div>
-            <h3>Carousel cards med ur og varighed</h3>
+            <h3 class="font-bold text-2xl my-5">
+              Carousel cards med ur og varighed
+            </h3>
             <Card4
               src="../cirkeline-4.png"
               clock="../clock.png"
@@ -52,8 +54,48 @@ import Card1 from "../components/Card1.astro";
               p="Videoens varighed"
             />
           </div>
+          <div>
+            <h3 class="font-bold text-2xl my-5">
+              Carousel cards til SE VIDERE HVOR DU SLAP..
+            </h3>
+            <Card2
+              src="/honningkage-video.png"
+              clock="/Component 57.png"
+              alt="Ur icon"
+              h3="Overskrift til video"
+            />
+          </div>
         </div>
       </section>
+      <p>
+        ____________________________________________________________________
+      </p>
+      <section>
+        <h2 class="font-bold text-5xl pt-10 text-fuchsia-950">Buttons</h2>
+        <div>
+          <h3 class="font-bold text-2xl my-5">Search button</h3>
+          <button
+            class="w-10 h-10 rounded-full bg-[var(--color-prim-100)]
+               flex items-center justify-center shadow-md
+               hover:scale-105 duration-200"
+          >
+            <img src="/søg.png" alt="Search" class="w-6 h-6" />
+          </button>
+        </div>
+        <div>
+          <h3 class="font-bold text-2xl my-5">Login button</h3>
+          <button
+            class="px-6 py-2 rounded-full bg-[var(--color-prim-100)]
+               text-white font-raleway font-semibold shadow-md
+               hover:scale-105 duration-200"
+          >
+            Hej [navn]!
+          </button>
+        </div>
+      </section>
+      <p>
+        ____________________________________________________________________
+      </p>
     </article>
   </article>
 </MainLayout>
